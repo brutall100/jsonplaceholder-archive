@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-    <link rel="stylesheet" href="./CSS/navigation.css"> </head>
-<body>
-    <h1>Hello</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JSONPlaceholder Archive</title>
+    <meta name="description" content="Browse users, posts, albums and comments from the JSONPlaceholder API, filed like an old archive.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <script src="js/theme-init.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aclonica&amp;family=Sansation:wght@400;700&amp;display=swap">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="bg" aria-hidden="true"></div>
+    <header class="site-header" id="site-header"></header>
 
+    <main class="page wrap" id="main" tabindex="-1">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">A fake API, filed properly</p>
+          <h1>The JSONPlaceholder Archive</h1>
+          <p class="lede">Users, letters, postcards and replies from a free practice API, sorted into drawers like an old post-office archive.</p>
+          <div class="hero__actions" id="hero-actions"></div>
+        </div>
+        <div class="hero__art" id="hero-art" aria-hidden="true"></div>
+      </section>
+      <h2 class="section-title">Open a drawer</h2>
+      <div id="content"></div>
+    </main>
 
-    <script src="./index.js" type="module"></script>
-</body>
+    <footer class="site-footer" id="site-footer"></footer>
+    <script type="module" src="js/pages/home.js"></script>
+  </body>
 </html>

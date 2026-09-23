@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Albums Page</title>
-    <link rel="stylesheet" href="./CSS/navigation.css"> </head>
-<body>
-    <div id="content"></div>
- 
-    <script src="./albums.js" type="module"></script>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Albums · JSONPlaceholder Archive</title>
+    <meta name="description" content="Photo albums from the JSONPlaceholder archive with a cover and photo count.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <script src="js/theme-init.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aclonica&amp;family=Sansation:wght@400;700&amp;display=swap">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-page="albums">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="bg" aria-hidden="true"></div>
+    <header class="site-header" id="site-header"></header>
+
+    <main class="page wrap" id="main" tabindex="-1">
+      <header class="page-head" id="page-head">
+        <p class="eyebrow">Drawer C · Postcards</p>
+        <h1 id="page-title">Albums</h1>
+        <p class="lede">One hundred albums of postcards. Pick one to open the full gallery.</p>
+      </header>
+      <div id="content"></div>
+    </main>
+
+    <footer class="site-footer" id="site-footer"></footer>
+    <script type="module" src="js/pages/albums.js"></script>
+  </body>
 </html>
